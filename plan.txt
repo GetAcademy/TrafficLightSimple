@@ -8,18 +8,18 @@ Litt repetisjon - eksempel: trafikklys
         c. med returverdi
 
 Andre eksempler på returverdi
-    5. Beregninger
-
+    5. Flere eksempler som lager HTML - DRY = Don't repeat yourself
+    6. Eksempler som ikke lager HTML - innspill fra dere       
 
 Introdusere if-setninger, enkle sammenligninger og logiske verdier
-    6. Enkel introduksjon
-    7. Kjøpe øl i butikken 
+    7. Enkel introduksjon
+    8. Kjøpe øl i butikken 
        - plakat
        - enkelt GUI
        - code2flow
-       - 
-    8. Generell funksjon for lampe som er av eller på
-    9. Enkelt clicker game
+       - sette sammen - enkelt GUI og logikk
+    9. Generell funksjon for lampe som er av eller på
+    10. Enkelt clicker game
 
 
 
