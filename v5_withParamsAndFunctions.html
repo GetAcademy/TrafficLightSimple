@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #trafficLight {
+            display: flex;
+            flex-direction: column;
+            width: 3rem;
+            height: 10rem;
+            background-color: black;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        div.light {
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DRY - Don't Repeat Yourself</h1>
+
+    <div id="app">
+    </div>
+
+    <script>
+        showGreen();
+        function showGreen() {
+            show('showYellow()', 'gray', 'gray', 'green');
+        }
+
+        function showYellow() {
+            show('showRed()', 'gray', 'yellow', 'gray');
+        }
+
+        function showRed() {
+            show('showRedYellow()', 'red', 'gray', 'gray');
+        }
+
+        function showRedYellow() {
+            show('showGreen()', 'red', 'yellow', 'gray');
+        }
+
+        function show(myFunction, lamp1, lamp2, lamp3) {
+            document.getElementById('app').innerHTML = /*HTML*/`
+                <div id="trafficLight" onclick="${myFunction}">
+                </div>
+            `;
+            showLamp(lamp1);
+            showLamp(lamp2);
+            showLamp(lamp3);
+        }
+
+        function showLamp(color){
+            document.getElementById('trafficLight').innerHTML += /*HTML*/`
+                <div class="light" style="background-color: ${color};"></div>
+            `;
+        }
+    </script>
+</body>
+
+</html>
