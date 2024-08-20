@@ -1,0 +1,25 @@
+Litt repetisjon - eksempel: trafikklys
+    1. Hardkode i HTML
+    2. Flytte til JavaScript
+    3. Lage funksjonalitet
+    4. Refactoring = gjøre koden bedre, men sjekke at den gjør det samme
+        a. med parametre - tips: bruke diff
+        b. med delfunksjoner, men uten returverdi (.innerHTML += )
+        c. med returverdi
+
+Andre eksempler på returverdi
+    5. Beregninger
+
+
+Introdusere if-setninger, enkle sammenligninger og logiske verdier
+    6. Enkel introduksjon
+    7. Kjøpe øl i butikken 
+       - plakat
+       - enkelt GUI
+       - code2flow
+       - 
+    8. Generell funksjon for lampe som er av eller på
+    9. Enkelt clicker game
+
+
+

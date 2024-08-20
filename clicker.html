@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        let points = 0;
+
+        doClick();
+        function doClick() {
+            points++;
+            show();
+        }
+
+        function show() {
+            let html = /*HTML*/`  
+                <div>              
+                    Poeng: ${points}
+                </div>
+                <button onclick="doClick()">+</button>
+            `;
+            document.getElementById('app').innerHTML = html;
+        }
+
+    </script>
+</body>
+
+</html>
