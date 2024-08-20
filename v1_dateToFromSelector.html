@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .horizontal {
+            display: grid;
+            grid-template-columns: repeat(6,auto);
+            justify-content: end;
+            gap: 5px;
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .number,
+        label {
+            font-size: 250%;
+        }
+
+        .border {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="vertical">
+            <div>
+                <div>Fra:</div>
+                <div class="horizontal">
+                    <label>Dag: </label>
+                    <div class="horizontal border">
+                        <div class="number">6</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+                    <label>Måned: </label>
+                    <div class="horizontal border">
+                        <div class="number">2</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+
+                    <label>År: </label>
+                    <div class="horizontal border">
+                        <div class="number">2024</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>Til:</div>
+                <div class="horizontal">
+                    <label>Dag: </label>
+                    <div class="horizontal border">
+                        <div class="number">16</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+                    <label>Måned: </label>
+                    <div class="horizontal border">
+                        <div class="number">2</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+
+                    <label>År: </label>
+                    <div class="horizontal border">
+                        <div class="number">2024</div>
+                        <div class="vertical">
+                            <button>▲</button>
+                            <button>▼</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>Søk</button>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+
+
+
+</body>
+
+</html>

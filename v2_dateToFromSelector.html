@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .horizontal {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            justify-content: end;
+            gap: 5px;
+        }
+
+        .vertical {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .number,
+        label {
+            font-size: 250%;
+        }
+
+        .border {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+
+    <script>
+        document.getElementById('app').innerHTML =
+         createDateSelector('Fra',1,1,2024)
+        + createDateSelector('Til',31,12,2024);
+
+        function createDateSelector(label, day, month, year){
+            return /*HTML*/`
+                <div class="vertical">
+                    <div>${label}:</div>
+                    <div class="horizontal">
+                        ${createNumberSelector('Dag:', day)}
+                        ${createNumberSelector('Måned:', month)}
+                        ${createNumberSelector('År:', year)}
+                    </div>
+                </div>
+            `;
+            // return createNumberSelector('Dag:', 6)
+            // + createNumberSelector('Måned:', 2)
+            // + createNumberSelector('År:', 2024);
+        }
+
+        function createNumberSelector(label, number) {
+            return /*HTML*/`
+                <div class="horizontal">
+                    <label>${label}</label>
+                    <div class="horizontal border">
+                        <div class="number">${number}</div>
+                        ${createUpDownButtonsHtml()}
+                    </div>
+                </div>
+            `;
+        }
+
+        function createUpDownButtonsHtml() {
+            return /*HTML*/`
+                <div class="vertical">
+                    <button>▲</button>
+                    <button>▼</button>
+                </div>            
+            `;
+        }
+    </script>
+</body>
+
+</html>
