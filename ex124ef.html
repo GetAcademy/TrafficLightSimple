@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function createDiv(text, foregroundColor = 'black', backgroundColor = 'white') {
+            // if (arguments.length == 1) {
+            //     text = arguments[0];
+            //     foregroundColor = 'black';
+            //     backgroundColor = 'white';
+            // }
+
+            return /*HTML*/`
+                <div style="color: ${foregroundColor}; background-color: ${backgroundColor}">
+                    ${text}
+                </div>            
+            `;
+        }
+    </script>
+</body>
+
+</html>
